@@ -1,0 +1,247 @@
+<!-- This makes everything look nice and run on other browsers -->
+<!DOCTYPE html>
+
+<!-- This says: everything inside this block is in HTML -->
+<html>
+
+<!-- The stuff that's really important, but the user doesn't really see -->
+<head>
+
+  <!-- Sets name of the tab -->
+  <title>4255 - Robodores</title>
+
+  <!-- Important to have, don't know why -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- This stuff later -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+
+ <style>
+ /* The Modal (background) */
+ .modal {
+   display: none;
+   /* Hidden by default */
+   position: fixed;
+   /* Stay in place */
+   z-index: 1;
+   /* Sit on top */
+   padding-top: 100px;
+   /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%;
+   /* Full width */
+   height: 100%;
+   /* Full height */
+   overflow: auto;
+   /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4);
+   /* Black w/ opacity */
+ }
+
+ /* Modal Content */
+ .modal-content {
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+ }
+
+ /* The Close Button */
+ .close {
+   color: #5b5a5a;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+
+ .close:hover,
+ .close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ .topnav {
+    background-color: #474747;
+    overflow: hidden;
+    height: 48px;
+
+ }
+
+ /* Style the links inside the navigation bar */
+ .topnav a {
+    float: left;
+    color: #fffefe;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Raleway";
+ }
+
+ /* Change the color of links on hover */
+ .topnav a:hover {
+    background-color: #b2b2b2;
+    color: rgb(245, 239, 239);
+ }
+
+ /* Add a color to the active/current link */
+ .topnav a.active {
+    background-color: #0b0b0b;
+    color: white;
+ }
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Raleway";
+    font-size: 100px;
+    overflow: hidden;
+ }
+ .centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+ }
+ input[type=datetime-local], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+ }
+
+</style>
+  <body>
+    
+    <div class="topnav">
+      <!-- <img src="Logo.png" alt="Italian Trulli"> -->
+      <a class="active" href="#home">Home</a>
+      <a href="OurTeam.html">Our Team</a>
+      <a href="Competition.html">Competition</a>
+      <a href="#Community">Community</a>
+  </div>
+
+  <header style="max-width:1500px;" id="home" class="container">
+    <div style="text-align: right; filter: blur(4px);"><img src="Team.jpg" alt="Architecture" width="1900" height="750"></div>
+    <div width="100%">
+      <span width="100%" style="letter-spacing: 7px;color: white; border-width: 2px; border-style: solid; border-color: white; background: black; padding: 0.3em; font-family: Raleway; font-weight: 550" class="centered">4255 <hr/> <span style="color: white">RoboDores</span></span>
+    </div>
+  </header>
+
+  <div style="max-width:1564px; font-family:Raleway; padding-left: 50px; padding-right:50px;">
+    <!-- About Section -->
+    <div  id="about">
+      <h1>About Us</h1>
+      <br/>
+      <hr/>
+      <br/>
+      <p style="line-height: 1.5; font-size: 21px;">Team 4255, Robodores, is an FRC (FIRST Robotics Competition) robotics team based in Monterey High School in Monterey, California. Each year, our student-led team successfully designs, builds, and programs a robot to compete in FIRST competitions around the state of California and beyond. Founded in 2011, our team has steadily grown to include 15 participating students and our mentors. Committed to spreading FIRST in our community, we’ve sponsored 4+ local FIRST teams, and work with Seaside High School to organize the annual Monterey Bay Regional competition, attended by over 30 FRC teams, near and far. We’ve made it a priority to provide participating students with hands-on experiences, mentorship from STEM professionals, and the tools and equipment needed to build impressive robots safely and efficiently.</p>
+      <br/>
+      <p style="line-height: 1.5; font-size: 21px;"><b>Our mission is to inspire students of all ages to take part in STEM education, and to raise public awareness of FIRST and what it does for the students who participate in it.</b> </p>
+        <br>
+        <br>
+        <!-- Trigger/Open The Modal -->
+        <!-- <button style="height: 50px; width: 100px; font-family: Raleway; color: white; background-color: #000;" id="registerBtn">More Info</button> -->
+    </div>
+
+    <div  id="FIRST">
+      <h1>What is FIRST?</h1>
+      <br/>
+      <hr/>
+      <br/>
+      <p style="line-height: 1.5; font-size: 21px;">Founded by inventor Dean Kamen in 1989, FIRST (For Inspiration and Recognition of Science and Technology) seeks to “inspire young people to be science and technology leaders and innovators, by engaging them in exciting mentor-based programs that build science, engineering, and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.” FIRST participation is proven to encourage students to pursue education and careers in STEM-related fields, inspire them to become leaders and innovators, and enhance their 21st century work-life skills. For more information on FIRST, visit their official website. Since its inception, the FIRST organization has expanded to consist of four international robotics programs: 
+        <img src="FIRST.png" alt="First Logo" style="float: right; padding-right: 50px; padding-top: 10px">
+        
+        <ul style="line-height: 1.5; font-size: 21px; padding-left: 70px">
+          <li>FIRST Lego League Jr (ages 4-10)</li>
+        
+          <li>FIRST Lego League (ages 9-16, varies by country)</li>
+        
+          <li>FIRST Tech Challenge (ages 12-18) </li>
+        
+          <li>FIRST Robotics Competition (ages 14-18)</li>
+        </ul>
+        
+
+
+        
+         
+        
+</p>
+        <br>
+        <br>
+        <!-- Trigger/Open The Modal -->
+    </div>
+        <!-- <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>About</h2>
+            <hr/>
+            <br/>
+            <h3 style="line-height: 2">Team 4255, Robodores, is an FRC (FIRST Robotics Competition) robotics team based in Monterey High School in Monterey, California. Each year, our student-led team successfully designs, builds, and programs a robot to compete in FIRST competitions around the state of California and beyond. Founded in 2011, our team has steadily grown to include 15 participating students and our mentors. Committed to spreading FIRST in our community, we’ve sponsored 4+ local FIRST teams, and work with Seaside High School to organize the annual Monterey Bay Regional competition, attended by over 30 FRC teams, near and far. We’ve made it a priority to provide participating students with hands-on experiences, mentorship from STEM professionals, and the tools and equipment needed to build impressive robots safely and efficiently.</h3>
+          </div> -->
+<script type="module">
+  // Import the functions you   need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("registerBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  var submitbtn = document.getElementById("submitButton")
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+</script>
+</body>
+</html>
